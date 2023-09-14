@@ -1,5 +1,6 @@
 from figure import Figure
 
+
 class Square(Figure):
     def __init__(self, side):
         if side <= 0:
