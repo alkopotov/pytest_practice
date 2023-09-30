@@ -31,7 +31,6 @@ def get_grade(num):
 
 with open('../data/grades.csv', newline='') as f:
     reader = csv.reader(f)
-    # header = next(reader)
     header = [e.strip('" ') for e in next(reader)]
     print(header)
     array = [dict(zip(header, row)) for row in reader]
@@ -41,7 +40,6 @@ res = [{'Student': elem['First name'].strip('" ') + ' ' + elem['Last name'].stri
             elem['Test3']) + get_num(elem['Test4']) + get_num(elem['Final'])) / 5),
         'Grade': elem['Grade'].strip('" ')} for elem in array]
 
-print(*res, sep='\n')
 
 @pytest.mark.parametrize('item', res)
 def test_grade(item):
