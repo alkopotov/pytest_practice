@@ -1,0 +1,13 @@
+'{"id":18,"petId":29,"quantity":1,"shipDate":"2023-03-08T01:02:15.827+0000","status":"cancelled","complete":false}'
+'GET example'
+'https://petstore.swagger.io/v2/store/order/18'
+200
+'OK'
+'{"id":18,"petId":29,"quantity":1,"shipDate":"2023-03-08T01:02:15.827+0000","status":"cancelled","complete":false}'
+{'complete': False,
+ 'id': 18,
+ 'petId': 29,
+ 'quantity': 1,
+ 'shipDate': '2023-03-08T01:02:15.827+0000',
+ 'status': 'cancelled'}
+'**********'

@@ -1,0 +1,13 @@
+'{"code":500,"type":"unknown","message":"something bad happened"}'
+'GET example'
+'https://petstore.swagger.io/v2/store/order/64'
+200
+'OK'
+'{"id":64,"petId":111,"quantity":85,"shipDate":"2023-10-07T16:16:15.827+0000","status":"placed","complete":true}'
+{'complete': True,
+ 'id': 64,
+ 'petId': 111,
+ 'quantity': 85,
+ 'shipDate': '2023-10-07T16:16:15.827+0000',
+ 'status': 'placed'}
+'**********'

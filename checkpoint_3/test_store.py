@@ -3,10 +3,11 @@ import pprint
 import json
 import requests
 import pytest
+import allure
 
 order_data = [
     {
-        "id": 1,
+        "id": 15,
         "petId": 2,
         "quantity": 10,
         "shipDate": "2023-10-07T16:16:15.827Z",
@@ -14,7 +15,7 @@ order_data = [
         "complete": True
     },
     {
-        "id": 2,
+        "id": 16,
         "petId": 5,
         "quantity": 8,
         "shipDate": "2023-09-20T19:45:15.827Z",
@@ -22,7 +23,7 @@ order_data = [
         "complete": True
     },
     {
-        "id": 4,
+        "id": 17,
         "petId": 15,
         "quantity": 6,
         "shipDate": "2023-11-20T19:45:15.827Z",
@@ -30,7 +31,7 @@ order_data = [
         "complete": False
     },
     {
-        "id": 8,
+        "id": 18,
         "petId": 29,
         "quantity": 1,
         "shipDate": "2023-03-08T01:02:15.827Z",
@@ -44,6 +45,7 @@ base_request = BaseRequest(BASE_URL_PETSTORE)
 
 
 @pytest.mark.parametrize('item', order_data)
+@allure.story('Test Store')
 def test_api(item):
     data = json.dumps(item)
     headers = {'Content-Type': 'application/json'}

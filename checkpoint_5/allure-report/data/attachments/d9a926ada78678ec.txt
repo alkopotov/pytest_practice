@@ -1,0 +1,15 @@
+'{"code":200,"type":"unknown","message":"93"}'
+'GET example'
+'https://petstore.swagger.io/v2/user/terrelladriana'
+200
+'OK'
+'{"id":93,"username":"terrelladriana","firstName":"Ralph","lastName":"Myers","email":"sgill@example.com","password":")4Tq7&wlsC","phone":"796.362.5861","userStatus":164}'
+{'email': 'sgill@example.com',
+ 'firstName': 'Ralph',
+ 'id': 93,
+ 'lastName': 'Myers',
+ 'password': ')4Tq7&wlsC',
+ 'phone': '796.362.5861',
+ 'userStatus': 164,
+ 'username': 'terrelladriana'}
+'**********'
